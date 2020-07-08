@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../style/style.css?rnd=132">
+  
+    <!--***** dos lineas de scripts para guardar imagen-->
+    <script type="text/javascript" src="../../js/html2canvas.js"></script>
+    <script type="text/javascript" src="../../js/html2canvas.min.js"></script>
+    <!--***** Fin de dos lineas de scripts para guardar imagen-->
+
+</head>
+
+<body>
+
+<div id="contenedor">
+      <div style="position:absolute;top:0.000000px;left:0.000000px"><nobr><img height="1099.000000" width="872.000000" src ="bgimg/fondo.jpg"/></nobr></div>
+    <!--Empezar a agregar contenido-->
+    <span style="position: absolute; top: 557px; left: 116px">
+		<textarea rows = "1" cols = "15" maxlength = "15" id="ea2_p40res1"></textarea>
+	</span>
+  <span style="position: absolute; top: 579px; left: 167px">
+  <textarea rows = "1" cols = "15" maxlength = "15" id="ea2_p40res2"></textarea>
+  </span>
+  <span style="position: absolute; top: 618px; left: 109px">
+  <textarea rows = "1" cols = "12" maxlength = "12" id="ea2_p40res3"></textarea>
+  </span>
+  <span style="position: absolute; top: 659px; left: 199px">
+  <textarea rows = "1" cols = "12" maxlength = "12" id="ea2_p40res4"></textarea>
+  </span>
+	<span style="position: absolute; top: 678px; left: 138px">
+		<textarea rows = "1" cols = "15" maxlength = "15" id="ea2_p40res5"></textarea>
+	</span>
+		
+      <span style="position: absolute; top: 842px; left: 466px">
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res6"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res7"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res8"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res9"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res10"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res11"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res12"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res13"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res14"></textarea><br>
+	  <textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res15"></textarea>
+		</span>
+  <span style="position: absolute; top: 842px; left: 579px">
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res16"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res17"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res18"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res19"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res20"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res21"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res22"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res23"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res24"></textarea><br>
+  <textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res25"></textarea>
+	</span>
+      <span style="position: absolute; top: 842px; left: 694px">
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res26"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res27"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res28"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res29"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res30"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res31"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res32"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res33"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res34"></textarea><br>
+			<textarea rows = "1" cols = "10" maxlength = "10" id="ea2_p40res35"></textarea>
+		</span>
+       
+    <!--Fin del contenido-->
+       <!-- FORMULARIO AL FINAL DEL CONTENIDO -->
+
+	<form style="margin-top: 1030px;margin-left: 190px; position: absolute; z-index: 2;" id="myForm" action="../../send.php" method="post">
+			<textarea style="display:none;" id="myInput" name = "imagen" maxlength="10"></textarea>
+			<input type="button" onclick="save_data()" value="Save"  class="btn btn-primary">
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="button" onclick="send_data(); loader(); return false" value="Send" class="btn btn-primary"> 
+			<input type="hidden" id="ea2_regNA" name="ea2_regNA">
+			<input type="hidden" id="ea2_regGP" name="ea2_regGP">
+			<input type="hidden" id="ea2_regCA" name="ea2_regCA">
+			<input type="hidden" id="ea2_regND" name="ea2_regND">
+			<input type="hidden" id="ea2_regCD" name="ea2_regCD">
+		</form>
+
+  <!-- FIN FORMULARIO AL FINAL DEL CONTENIDO -->
+
+		<div id="loader" style="display:none; margin-top: 1020px;margin-left: 190px; position: absolute; z-index: 2;">
+			<img src="../../img/carga.gif"  width="180px" height="65px">
+		</div>
+            
+    </div>       
+</body>
+<script type="text/javascript">
+	//Carga datos del registro
+    document.getElementById('ea2_regNA').value = localStorage.getItem('ea2_regNA');
+    document.getElementById('ea2_regGP').value = localStorage.getItem('ea2_regGP');
+    document.getElementById('ea2_regCA').value = localStorage.getItem('ea2_regCA');
+    document.getElementById('ea2_regND').value = localStorage.getItem('ea2_regND');
+    document.getElementById('ea2_regCD').value = localStorage.getItem('ea2_regCD');
+
+	 document.getElementById('ea2_p40res1').value = localStorage.getItem('ea2_p40res1');
+    document.getElementById('ea2_p40res2').value = localStorage.getItem('ea2_p40res2');
+    document.getElementById('ea2_p40res3').value = localStorage.getItem('ea2_p40res3');
+    document.getElementById('ea2_p40res4').value = localStorage.getItem('ea2_p40res4');
+    document.getElementById('ea2_p40res5').value = localStorage.getItem('ea2_p40res5');
+    document.getElementById('ea2_p40res6').value = localStorage.getItem('ea2_p40res6');
+    document.getElementById('ea2_p40res7').value = localStorage.getItem('ea2_p40res7');
+    document.getElementById('ea2_p40res8').value = localStorage.getItem('ea2_p40res8');
+    document.getElementById('ea2_p40res9').value = localStorage.getItem('ea2_p40res9');
+    document.getElementById('ea2_p40res10').value = localStorage.getItem('ea2_p40res10');
+    document.getElementById('ea2_p40res11').value = localStorage.getItem('ea2_p40res11');
+    document.getElementById('ea2_p40res12').value = localStorage.getItem('ea2_p40res12');
+    document.getElementById('ea2_p40res13').value = localStorage.getItem('ea2_p40res13');
+    document.getElementById('ea2_p40res14').value = localStorage.getItem('ea2_p40res14');
+    document.getElementById('ea2_p40res15').value = localStorage.getItem('ea2_p40res15');
+    document.getElementById('ea2_p40res16').value = localStorage.getItem('ea2_p40res16');
+    document.getElementById('ea2_p40res17').value = localStorage.getItem('ea2_p40res17');
+    document.getElementById('ea2_p40res18').value = localStorage.getItem('ea2_p40res18');
+    document.getElementById('ea2_p40res19').value = localStorage.getItem('ea2_p40res19');
+    document.getElementById('ea2_p40res20').value = localStorage.getItem('ea2_p40res20');
+    document.getElementById('ea2_p40res21').value = localStorage.getItem('ea2_p40res21');
+    document.getElementById('ea2_p40res22').value = localStorage.getItem('ea2_p40res22');
+    document.getElementById('ea2_p40res23').value = localStorage.getItem('ea2_p40res23');
+    document.getElementById('ea2_p40res24').value = localStorage.getItem('ea2_p40res24');
+    document.getElementById('ea2_p40res25').value = localStorage.getItem('ea2_p40res25');
+    document.getElementById('ea2_p40res26').value = localStorage.getItem('ea2_p40res26');
+    document.getElementById('ea2_p40res27').value = localStorage.getItem('ea2_p40res27');
+    document.getElementById('ea2_p40res28').value = localStorage.getItem('ea2_p40res28');
+    document.getElementById('ea2_p40res29').value = localStorage.getItem('ea2_p40res29');
+    document.getElementById('ea2_p40res30').value = localStorage.getItem('ea2_p40res30');
+    document.getElementById('ea2_p40res31').value = localStorage.getItem('ea2_p40res31');
+    document.getElementById('ea2_p40res32').value = localStorage.getItem('ea2_p40res32');
+    document.getElementById('ea2_p40res33').value = localStorage.getItem('ea2_p40res33');
+    document.getElementById('ea2_p40res34').value = localStorage.getItem('ea2_p40res34');
+    document.getElementById('ea2_p40res35').value = localStorage.getItem('ea2_p40res35');
+    document.getElementById('ea2_p40res36').value = localStorage.getItem('ea2_p40res36');
+    document.getElementById('ea2_p40res37').value = localStorage.getItem('ea2_p40res37');
+    document.getElementById('ea2_p40res38').value = localStorage.getItem('ea2_p40res38');
+    document.getElementById('ea2_p40res39').value = localStorage.getItem('ea2_p40res39');
+    document.getElementById('ea2_p40res40').value = localStorage.getItem('ea2_p40res40');
+    document.getElementById('ea2_p40res41').value = localStorage.getItem('ea2_p40res41');
+    document.getElementById('ea2_p40res42').value = localStorage.getItem('ea2_p40res42');
+    document.getElementById('ea2_p40res43').value = localStorage.getItem('ea2_p40res43');
+    document.getElementById('ea2_p40res44').value = localStorage.getItem('ea2_p40res44');
+    document.getElementById('ea2_p40res45').value = localStorage.getItem('ea2_p40res45');
+    document.getElementById('ea2_p40res46').value = localStorage.getItem('ea2_p40res46');
+    document.getElementById('ea2_p40res47').value = localStorage.getItem('ea2_p40res47');
+    document.getElementById('ea2_p40res48').value = localStorage.getItem('ea2_p40res48');
+    document.getElementById('ea2_p40res49').value = localStorage.getItem('ea2_p40res49');
+    document.getElementById('ea2_p40res50').value = localStorage.getItem('ea2_p40res50');
+    document.getElementById('ea2_p40res51').value = localStorage.getItem('ea2_p40res51');
+    document.getElementById('ea2_p40res52').value = localStorage.getItem('ea2_p40res52');
+    document.getElementById('ea2_p40res53').value = localStorage.getItem('ea2_p40res53');
+    document.getElementById('ea2_p40res54').value = localStorage.getItem('ea2_p40res54');
+    document.getElementById('ea2_p40res55').value = localStorage.getItem('ea2_p40res55');
+    document.getElementById('ea2_p40res56').value = localStorage.getItem('ea2_p40res56');
+    document.getElementById('ea2_p40res57').value = localStorage.getItem('ea2_p40res57');
+    document.getElementById('ea2_p40res58').value = localStorage.getItem('ea2_p40res58');
+    document.getElementById('ea2_p40res59').value = localStorage.getItem('ea2_p40res59');
+    document.getElementById('ea2_p40res60').value = localStorage.getItem('ea2_p40res60');
+    document.getElementById('ea2_p40res61').value = localStorage.getItem('ea2_p40res61');
+    document.getElementById('ea2_p40res62').value = localStorage.getItem('ea2_p40res62');
+    document.getElementById('ea2_p40res63').value = localStorage.getItem('ea2_p40res63');
+    document.getElementById('ea2_p40res64').value = localStorage.getItem('ea2_p40res64');
+    document.getElementById('ea2_p40res65').value = localStorage.getItem('ea2_p40res65');
+    document.getElementById('ea2_p40res66').value = localStorage.getItem('ea2_p40res66');
+    document.getElementById('ea2_p40res67').value = localStorage.getItem('ea2_p40res67');
+    document.getElementById('ea2_p40res68').value = localStorage.getItem('ea2_p40res68');
+    document.getElementById('ea2_p40res69').value = localStorage.getItem('ea2_p40res69');
+    document.getElementById('ea2_p40res70').value = localStorage.getItem('ea2_p40res70');
+    document.getElementById('ea2_p40res71').value = localStorage.getItem('ea2_p40res71');
+    document.getElementById('ea2_p40res72').value = localStorage.getItem('ea2_p40res72');
+    document.getElementById('ea2_p40res73').value = localStorage.getItem('ea2_p40res73');
+    document.getElementById('ea2_p40res74').value = localStorage.getItem('ea2_p40res74');
+    document.getElementById('ea2_p40res75').value = localStorage.getItem('ea2_p40res75');
+    document.getElementById('ea2_p40res76').value = localStorage.getItem('ea2_p40res76');
+    document.getElementById('ea2_p40res77').value = localStorage.getItem('ea2_p40res77');
+    document.getElementById('ea2_p40res78').value = localStorage.getItem('ea2_p40res78');
+    document.getElementById('ea2_p40res79').value = localStorage.getItem('ea2_p40res79');
+    document.getElementById('ea2_p40res80').value = localStorage.getItem('ea2_p40res80');
+    document.getElementById('ea2_p40res81').value = localStorage.getItem('ea2_p40res81');
+    document.getElementById('ea2_p40res82').value = localStorage.getItem('ea2_p40res82');
+    document.getElementById('ea2_p40res83').value = localStorage.getItem('ea2_p40res83');
+    document.getElementById('ea2_p40res84').value = localStorage.getItem('ea2_p40res84');
+    document.getElementById('ea2_p40res85').value = localStorage.getItem('ea2_p40res85');
+    document.getElementById('ea2_p40res86').value = localStorage.getItem('ea2_p40res86');
+    document.getElementById('ea2_p40res87').value = localStorage.getItem('ea2_p40res87');
+    document.getElementById('ea2_p40res88').value = localStorage.getItem('ea2_p40res88');
+    document.getElementById('ea2_p40res89').value = localStorage.getItem('ea2_p40res89');
+    document.getElementById('ea2_p40res90').value = localStorage.getItem('ea2_p40res90');
+    document.getElementById('ea2_p40res91').value = localStorage.getItem('ea2_p40res91');
+    document.getElementById('ea2_p40res92').value = localStorage.getItem('ea2_p40res92');
+    document.getElementById('ea2_p40res93').value = localStorage.getItem('ea2_p40res93');
+    document.getElementById('ea2_p40res94').value = localStorage.getItem('ea2_p40res94');
+    document.getElementById('ea2_p40res95').value = localStorage.getItem('ea2_p40res95');
+    document.getElementById('ea2_p40res96').value = localStorage.getItem('ea2_p40res96');
+    document.getElementById('ea2_p40res97').value = localStorage.getItem('ea2_p40res97');
+    document.getElementById('ea2_p40res98').value = localStorage.getItem('ea2_p40res98');
+    document.getElementById('ea2_p40res99').value = localStorage.getItem('ea2_p40res99');
+    document.getElementById('ea2_p40res100').value = localStorage.getItem('ea2_p40res100');
+    document.getElementById('ea2_p40res101').value = localStorage.getItem('ea2_p40res101');
+    document.getElementById('ea2_p40res102').value = localStorage.getItem('ea2_p40res102');
+    document.getElementById('ea2_p40res103').value = localStorage.getItem('ea2_p40res103');
+    document.getElementById('ea2_p40res104').value = localStorage.getItem('ea2_p40res104');
+    document.getElementById('ea2_p40res105').value = localStorage.getItem('ea2_p40res105');
+    document.getElementById('ea2_p40res106').value = localStorage.getItem('ea2_p40res106');
+    document.getElementById('ea2_p40res107').value = localStorage.getItem('ea2_p40res107');
+    document.getElementById('ea2_p40res108').value = localStorage.getItem('ea2_p40res108');
+
+    function save_data(){
+        var ea2_p40res1 = document.getElementById('ea2_p40res1').value;
+        localStorage.setItem('ea2_p40res1', ea2_p40res1);
+        var ea2_p40res2 = document.getElementById('ea2_p40res2').value;
+        localStorage.setItem('ea2_p40res2', ea2_p40res2);
+        var ea2_p40res3 = document.getElementById('ea2_p40res3').value;
+        localStorage.setItem('ea2_p40res3', ea2_p40res3);
+        var ea2_p40res4 = document.getElementById('ea2_p40res4').value;
+        localStorage.setItem('ea2_p40res4', ea2_p40res4);
+        var ea2_p40res5 = document.getElementById('ea2_p40res5').value;
+        localStorage.setItem('ea2_p40res5', ea2_p40res5);
+        var ea2_p40res6 = document.getElementById('ea2_p40res6').value;
+        localStorage.setItem('ea2_p40res6', ea2_p40res6);
+        var ea2_p40res7 = document.getElementById('ea2_p40res7').value;
+        localStorage.setItem('ea2_p40res7', ea2_p40res7);
+        var ea2_p40res8 = document.getElementById('ea2_p40res8').value;
+        localStorage.setItem('ea2_p40res8', ea2_p40res8);
+        var ea2_p40res9 = document.getElementById('ea2_p40res9').value;
+        localStorage.setItem('ea2_p40res9', ea2_p40res9);
+        var ea2_p40res10 = document.getElementById('ea2_p40res10').value;
+        localStorage.setItem('ea2_p40res10', ea2_p40res10);
+        var ea2_p40res11 = document.getElementById('ea2_p40res11').value;
+        localStorage.setItem('ea2_p40res11', ea2_p40res11);
+        var ea2_p40res12 = document.getElementById('ea2_p40res12').value;
+        localStorage.setItem('ea2_p40res12', ea2_p40res12);
+        var ea2_p40res13 = document.getElementById('ea2_p40res13').value;
+        localStorage.setItem('ea2_p40res13', ea2_p40res13);
+        var ea2_p40res14 = document.getElementById('ea2_p40res14').value;
+        localStorage.setItem('ea2_p40res14', ea2_p40res14);
+        var ea2_p40res15 = document.getElementById('ea2_p40res15').value;
+        localStorage.setItem('ea2_p40res15', ea2_p40res15);
+        var ea2_p40res16 = document.getElementById('ea2_p40res16').value;
+        localStorage.setItem('ea2_p40res16', ea2_p40res16);
+        var ea2_p40res17 = document.getElementById('ea2_p40res17').value;
+        localStorage.setItem('ea2_p40res17', ea2_p40res17);
+        var ea2_p40res18 = document.getElementById('ea2_p40res18').value;
+        localStorage.setItem('ea2_p40res18', ea2_p40res18);
+        var ea2_p40res19 = document.getElementById('ea2_p40res19').value;
+        localStorage.setItem('ea2_p40res19', ea2_p40res19);
+        var ea2_p40res20 = document.getElementById('ea2_p40res20').value;
+        localStorage.setItem('ea2_p40res20', ea2_p40res20);
+        var ea2_p40res21 = document.getElementById('ea2_p40res21').value;
+        localStorage.setItem('ea2_p40res21', ea2_p40res21);
+        var ea2_p40res22 = document.getElementById('ea2_p40res22').value;
+        localStorage.setItem('ea2_p40res22', ea2_p40res22);
+        var ea2_p40res23 = document.getElementById('ea2_p40res23').value;
+        localStorage.setItem('ea2_p40res23', ea2_p40res23);
+        var ea2_p40res24 = document.getElementById('ea2_p40res24').value;
+        localStorage.setItem('ea2_p40res24', ea2_p40res24);
+        var ea2_p40res25 = document.getElementById('ea2_p40res25').value;
+        localStorage.setItem('ea2_p40res25', ea2_p40res25);
+        var ea2_p40res26 = document.getElementById('ea2_p40res26').value;
+        localStorage.setItem('ea2_p40res26', ea2_p40res26);
+        var ea2_p40res27 = document.getElementById('ea2_p40res27').value;
+        localStorage.setItem('ea2_p40res27', ea2_p40res27);
+        var ea2_p40res28 = document.getElementById('ea2_p40res28').value;
+        localStorage.setItem('ea2_p40res28', ea2_p40res28);
+        var ea2_p40res29 = document.getElementById('ea2_p40res29').value;
+        localStorage.setItem('ea2_p40res29', ea2_p40res29);
+        var ea2_p40res30 = document.getElementById('ea2_p40res30').value;
+        localStorage.setItem('ea2_p40res30', ea2_p40res30);
+        var ea2_p40res31 = document.getElementById('ea2_p40res31').value;
+        localStorage.setItem('ea2_p40res31', ea2_p40res31);
+        var ea2_p40res32 = document.getElementById('ea2_p40res32').value;
+        localStorage.setItem('ea2_p40res32', ea2_p40res32);
+        var ea2_p40res33 = document.getElementById('ea2_p40res33').value;
+        localStorage.setItem('ea2_p40res33', ea2_p40res33);
+        var ea2_p40res34 = document.getElementById('ea2_p40res34').value;
+        localStorage.setItem('ea2_p40res34', ea2_p40res34);
+        var ea2_p40res35 = document.getElementById('ea2_p40res35').value;
+        localStorage.setItem('ea2_p40res35', ea2_p40res35);
+        var ea2_p40res36 = document.getElementById('ea2_p40res36').value;
+        localStorage.setItem('ea2_p40res36', ea2_p40res36);
+        var ea2_p40res37 = document.getElementById('ea2_p40res37').value;
+        localStorage.setItem('ea2_p40res37', ea2_p40res37);
+        var ea2_p40res38 = document.getElementById('ea2_p40res38').value;
+        localStorage.setItem('ea2_p40res38', ea2_p40res38);
+        var ea2_p40res39 = document.getElementById('ea2_p40res39').value;
+        localStorage.setItem('ea2_p40res39', ea2_p40res39);
+        var ea2_p40res40 = document.getElementById('ea2_p40res40').value;
+        localStorage.setItem('ea2_p40res40', ea2_p40res40);
+        var ea2_p40res41 = document.getElementById('ea2_p40res41').value;
+        localStorage.setItem('ea2_p40res41', ea2_p40res41);
+        var ea2_p40res42 = document.getElementById('ea2_p40res42').value;
+        localStorage.setItem('ea2_p40res42', ea2_p40res42);
+        var ea2_p40res43 = document.getElementById('ea2_p40res43').value;
+        localStorage.setItem('ea2_p40res43', ea2_p40res43);
+        var ea2_p40res44 = document.getElementById('ea2_p40res44').value;
+        localStorage.setItem('ea2_p40res44', ea2_p40res44);
+        var ea2_p40res45 = document.getElementById('ea2_p40res45').value;
+        localStorage.setItem('ea2_p40res45', ea2_p40res45);
+        var ea2_p40res46 = document.getElementById('ea2_p40res46').value;
+        localStorage.setItem('ea2_p40res46', ea2_p40res46);
+        var ea2_p40res47 = document.getElementById('ea2_p40res47').value;
+        localStorage.setItem('ea2_p40res47', ea2_p40res47);
+        var ea2_p40res48 = document.getElementById('ea2_p40res48').value;
+        localStorage.setItem('ea2_p40res48', ea2_p40res48);
+        var ea2_p40res49 = document.getElementById('ea2_p40res49').value;
+        localStorage.setItem('ea2_p40res49', ea2_p40res49);
+        var ea2_p40res50 = document.getElementById('ea2_p40res50').value;
+        localStorage.setItem('ea2_p40res50', ea2_p40res50);
+        var ea2_p40res51 = document.getElementById('ea2_p40res51').value;
+        localStorage.setItem('ea2_p40res51', ea2_p40res51);
+        var ea2_p40res52 = document.getElementById('ea2_p40res52').value;
+        localStorage.setItem('ea2_p40res52', ea2_p40res52);
+        var ea2_p40res53 = document.getElementById('ea2_p40res53').value;
+        localStorage.setItem('ea2_p40res53', ea2_p40res53);
+        var ea2_p40res54 = document.getElementById('ea2_p40res54').value;
+        localStorage.setItem('ea2_p40res54', ea2_p40res54);
+        var ea2_p40res55 = document.getElementById('ea2_p40res55').value;
+        localStorage.setItem('ea2_p40res55', ea2_p40res55);
+        var ea2_p40res56 = document.getElementById('ea2_p40res56').value;
+        localStorage.setItem('ea2_p40res56', ea2_p40res56);
+        var ea2_p40res57 = document.getElementById('ea2_p40res57').value;
+        localStorage.setItem('ea2_p40res57', ea2_p40res57);
+        var ea2_p40res58 = document.getElementById('ea2_p40res58').value;
+        localStorage.setItem('ea2_p40res58', ea2_p40res58);
+        var ea2_p40res59 = document.getElementById('ea2_p40res59').value;
+        localStorage.setItem('ea2_p40res59', ea2_p40res59);
+        var ea2_p40res60 = document.getElementById('ea2_p40res60').value;
+        localStorage.setItem('ea2_p40res60', ea2_p40res60);
+        var ea2_p40res61 = document.getElementById('ea2_p40res61').value;
+        localStorage.setItem('ea2_p40res61', ea2_p40res61);
+        var ea2_p40res62 = document.getElementById('ea2_p40res62').value;
+        localStorage.setItem('ea2_p40res62', ea2_p40res62);
+        var ea2_p40res63 = document.getElementById('ea2_p40res63').value;
+        localStorage.setItem('ea2_p40res63', ea2_p40res63);
+        var ea2_p40res64 = document.getElementById('ea2_p40res64').value;
+        localStorage.setItem('ea2_p40res64', ea2_p40res64);
+        var ea2_p40res65 = document.getElementById('ea2_p40res65').value;
+        localStorage.setItem('ea2_p40res65', ea2_p40res65);
+        var ea2_p40res66 = document.getElementById('ea2_p40res66').value;
+        localStorage.setItem('ea2_p40res66', ea2_p40res66);
+        var ea2_p40res67 = document.getElementById('ea2_p40res67').value;
+        localStorage.setItem('ea2_p40res67', ea2_p40res67);
+        var ea2_p40res68 = document.getElementById('ea2_p40res68').value;
+        localStorage.setItem('ea2_p40res68', ea2_p40res68);
+        var ea2_p40res69 = document.getElementById('ea2_p40res69').value;
+        localStorage.setItem('ea2_p40res69', ea2_p40res69);
+        var ea2_p40res70 = document.getElementById('ea2_p40res70').value;
+        localStorage.setItem('ea2_p40res70', ea2_p40res70);
+        var ea2_p40res71 = document.getElementById('ea2_p40res71').value;
+        localStorage.setItem('ea2_p40res71', ea2_p40res71);
+        var ea2_p40res72 = document.getElementById('ea2_p40res72').value;
+        localStorage.setItem('ea2_p40res72', ea2_p40res72);
+        var ea2_p40res73 = document.getElementById('ea2_p40res73').value;
+        localStorage.setItem('ea2_p40res73', ea2_p40res73);
+        var ea2_p40res74 = document.getElementById('ea2_p40res74').value;
+        localStorage.setItem('ea2_p40res74', ea2_p40res74);
+        var ea2_p40res75 = document.getElementById('ea2_p40res75').value;
+        localStorage.setItem('ea2_p40res75', ea2_p40res75);
+        var ea2_p40res76 = document.getElementById('ea2_p40res76').value;
+        localStorage.setItem('ea2_p40res76', ea2_p40res76);
+        var ea2_p40res77 = document.getElementById('ea2_p40res77').value;
+        localStorage.setItem('ea2_p40res77', ea2_p40res77);
+        var ea2_p40res78 = document.getElementById('ea2_p40res78').value;
+        localStorage.setItem('ea2_p40res78', ea2_p40res78);
+        var ea2_p40res79 = document.getElementById('ea2_p40res79').value;
+        localStorage.setItem('ea2_p40res79', ea2_p40res79);
+        var ea2_p40res80 = document.getElementById('ea2_p40res80').value;
+        localStorage.setItem('ea2_p40res80', ea2_p40res80);
+        var ea2_p40res81 = document.getElementById('ea2_p40res81').value;
+        localStorage.setItem('ea2_p40res81', ea2_p40res81);
+        var ea2_p40res82 = document.getElementById('ea2_p40res82').value;
+        localStorage.setItem('ea2_p40res82', ea2_p40res82);
+        var ea2_p40res83 = document.getElementById('ea2_p40res83').value;
+        localStorage.setItem('ea2_p40res83', ea2_p40res83);
+        var ea2_p40res84 = document.getElementById('ea2_p40res84').value;
+        localStorage.setItem('ea2_p40res84', ea2_p40res84);
+        var ea2_p40res85 = document.getElementById('ea2_p40res85').value;
+        localStorage.setItem('ea2_p40res85', ea2_p40res85);
+        var ea2_p40res86 = document.getElementById('ea2_p40res86').value;
+        localStorage.setItem('ea2_p40res86', ea2_p40res86);
+        var ea2_p40res87 = document.getElementById('ea2_p40res87').value;
+        localStorage.setItem('ea2_p40res87', ea2_p40res87);
+        var ea2_p40res88 = document.getElementById('ea2_p40res88').value;
+        localStorage.setItem('ea2_p40res88', ea2_p40res88);
+        var ea2_p40res89 = document.getElementById('ea2_p40res89').value;
+        localStorage.setItem('ea2_p40res89', ea2_p40res89);
+        var ea2_p40res90 = document.getElementById('ea2_p40res90').value;
+        localStorage.setItem('ea2_p40res90', ea2_p40res90);
+        var ea2_p40res91 = document.getElementById('ea2_p40res91').value;
+        localStorage.setItem('ea2_p40res91', ea2_p40res91);
+        var ea2_p40res92 = document.getElementById('ea2_p40res92').value;
+        localStorage.setItem('ea2_p40res92', ea2_p40res92);
+        var ea2_p40res93 = document.getElementById('ea2_p40res93').value;
+        localStorage.setItem('ea2_p40res93', ea2_p40res93);
+        var ea2_p40res94 = document.getElementById('ea2_p40res94').value;
+        localStorage.setItem('ea2_p40res94', ea2_p40res94);
+        var ea2_p40res95 = document.getElementById('ea2_p40res95').value;
+        localStorage.setItem('ea2_p40res95', ea2_p40res95);
+        var ea2_p40res96 = document.getElementById('ea2_p40res96').value;
+        localStorage.setItem('ea2_p40res96', ea2_p40res96);
+        var ea2_p40res97 = document.getElementById('ea2_p40res97').value;
+        localStorage.setItem('ea2_p40res97', ea2_p40res97);
+        var ea2_p40res98 = document.getElementById('ea2_p40res98').value;
+        localStorage.setItem('ea2_p40res98', ea2_p40res98);
+        var ea2_p40res99 = document.getElementById('ea2_p40res99').value;
+        localStorage.setItem('ea2_p40res99', ea2_p40res99);
+        var ea2_p40res100 = document.getElementById('ea2_p40res100').value;
+        localStorage.setItem('ea2_p40res100', ea2_p40res100);
+        var ea2_p40res101 = document.getElementById('ea2_p40res101').value;
+        localStorage.setItem('ea2_p40res101', ea2_p40res101);
+        var ea2_p40res102 = document.getElementById('ea2_p40res102').value;
+        localStorage.setItem('ea2_p40res102', ea2_p40res102);
+        var ea2_p40res103 = document.getElementById('ea2_p40res103').value;
+        localStorage.setItem('ea2_p40res103', ea2_p40res103);
+        var ea2_p40res104 = document.getElementById('ea2_p40res104').value;
+        localStorage.setItem('ea2_p40res104', ea2_p40res104);
+        var ea2_p40res105 = document.getElementById('ea2_p40res105').value;
+        localStorage.setItem('ea2_p40res105', ea2_p40res105);
+        var ea2_p40res106 = document.getElementById('ea2_p40res106').value;
+        localStorage.setItem('ea2_p40res106', ea2_p40res106);
+        var ea2_p40res107 = document.getElementById('ea2_p40res107').value;
+        localStorage.setItem('ea2_p40res107', ea2_p40res107);
+        var ea2_p40res108 = document.getElementById('ea2_p40res108').value;
+        localStorage.setItem('ea2_p40res108', ea2_p40res108);
+
+        alert("Saved correctly");
+    }
+
+    function send_data(){
+        pantallazo();
+        setTimeout(function(){document.getElementById("myForm").submit();}, 3000);
+    }
+
+    function pantallazo(){
+
+        html2canvas(document.body).then(canvas => {
+        	var dataURL = canvas.toDataURL();
+            console.log(dataURL);
+            document.getElementById("myInput").value = dataURL;
+            var canvas = document.createElement("canvas");
+            var ctx=canvas.getContext("2d");
+            var cw=canvas.width;
+            var ch=canvas.height;
+            var maxW=1280;
+            var maxH=1024;
+
+            var output = document.getElementById('myInput');
+	        var img = new Image;
+            img.onload = function() {
+                var iw=img.width;
+                var ih=img.height;
+                var scale=Math.min((maxW/iw),(maxH/ih));
+                var iwScaled=iw*scale;
+                var ihScaled=ih*scale;
+                canvas.width=iwScaled;
+                canvas.height=ihScaled;
+                ctx.drawImage(img,0,0,iwScaled,ihScaled);
+     	        output.value = canvas.toDataURL("../image/jpeg",1);
+            }
+            img.src = dataURL
+        });
+    }
+    
+    function loader(){
+		document.getElementById('loader').style.display = 'Block';
+ 
+	}
+
+</script>
+
+</html>
