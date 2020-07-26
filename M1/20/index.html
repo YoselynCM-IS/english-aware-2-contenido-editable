@@ -61,7 +61,8 @@
   <textarea rows = "1" cols = "40" maxlength = "40" id="ea2_p20res13"></textarea>
 	   </span>
    <span style="position: absolute; top: 750px; left: 479px">
-			<textarea rows = "1" cols = "40" maxlength = "40" id="ea2_p20res14"></textarea>
+			<textarea rows = "1" cols = "40" maxlength = "40" id="ea2_p20res14"></textarea><br>
+			<textarea rows = "1" cols = "40" maxlength = "40" id="ea2_p20res15"></textarea>
 		</span>
     <!--Fin del contenido-->
        <!-- FORMULARIO AL FINAL DEL CONTENIDO -->
@@ -108,6 +109,7 @@
     document.getElementById('ea2_p20res12').value = localStorage.getItem('ea2_p20res12');
     document.getElementById('ea2_p20res13').value = localStorage.getItem('ea2_p20res13');
     document.getElementById('ea2_p20res14').value = localStorage.getItem('ea2_p20res14');
+	document.getElementById('ea2_p20res15').value = localStorage.getItem('ea2_p20res15');
     
 
     function save_data(){
@@ -139,6 +141,8 @@
         localStorage.setItem('ea2_p20res13', ea2_p20res13);
         var ea2_p20res14 = document.getElementById('ea2_p20res14').value;
         localStorage.setItem('ea2_p20res14', ea2_p20res14);
+		var ea2_p20res15 = document.getElementById('ea2_p20res15').value;
+        localStorage.setItem('ea2_p20res15', ea2_p20res15);
        
         alert("Saved correctly");
     }

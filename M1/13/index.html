@@ -17,23 +17,30 @@
 <div id="contenedor">
       <div style="position:absolute;top:0.000000px;left:0.000000px"><nobr><img height="1099.000000" width="872.000000" src ="bgimg/fondo.jpg"/></nobr></div>
     <!--Empezar a agregar contenido-->
-  <span style="position: absolute; top: 136px; left: 179px">
+  <span style="position: absolute; top: 128px; left: 179px">
 		<textarea rows = "1" cols = "25" maxlength = "25" id="ea2_p13res1"></textarea><br>
+		<textarea rows = "1" cols = "25" maxlength = "25" id="ea2_p13res12"></textarea>
+		
   </span>
-  <span style="position: absolute; top: 175px; left: 179px">
+  <span style="position: absolute; top: 166px; left: 179px">
 		<textarea rows = "1" cols = "25" maxlength = "25" id="ea2_p13res2"></textarea><br>
+		<textarea rows = "1" cols = "25" maxlength = "25" id="ea2_p13res13"></textarea>
   </span>
-  <span style="position: absolute; top: 217px; left: 179px">
+  <span style="position: absolute; top: 208px; left: 179px">
 		<textarea rows = "1" cols = "25" maxlength = "25" id="ea2_p13res3"></textarea><br>
+		<textarea rows = "1" cols = "25" maxlength = "25" id="ea2_p13res14"></textarea>
   </span>
-  <span style="position: absolute; top: 259px; left: 179px">
+  <span style="position: absolute; top: 249px; left: 179px">
 		<textarea rows = "1" cols = "25" maxlength = "25" id="ea2_p13res4"></textarea><br>
+		<textarea rows = "1" cols = "25" maxlength = "25" id="ea2_p13res15"></textarea>
   </span>
-  <span style="position: absolute; top: 300px; left: 179px">
+  <span style="position: absolute; top: 292px; left: 179px">
 		<textarea rows = "1" cols = "25" maxlength = "25" id="ea2_p13res5"></textarea><br>
+		<textarea rows = "1" cols = "25" maxlength = "25" id="ea2_p13res16"></textarea>
   </span>
-	<span style="position: absolute; top: 337px; left: 179px">
+	<span style="position: absolute; top: 328px; left: 179px">
 		<textarea rows = "1" cols = "25" maxlength = "25" id="ea2_p13res6"></textarea><br>
+		<textarea rows = "1" cols = "25" maxlength = "25" id="ea2_p13res17"></textarea>
 	</span>
 		
       <span style="position: absolute; top: 478px; left: 252px">
@@ -94,6 +101,12 @@
     document.getElementById('ea2_p13res9').value = localStorage.getItem('ea2_p13res9');
     document.getElementById('ea2_p13res10').value = localStorage.getItem('ea2_p13res10');
     document.getElementById('ea2_p13res11').value = localStorage.getItem('ea2_p13res11');
+	document.getElementById('ea2_p13res12').value = localStorage.getItem('ea2_p13res12');
+    document.getElementById('ea2_p13res13').value = localStorage.getItem('ea2_p13res13');
+    document.getElementById('ea2_p13res14').value = localStorage.getItem('ea2_p13res14');
+    document.getElementById('ea2_p13res15').value = localStorage.getItem('ea2_p13res15');
+    document.getElementById('ea2_p13res16').value = localStorage.getItem('ea2_p13res16');
+    document.getElementById('ea2_p13res17').value = localStorage.getItem('ea2_p13res17');
     
 
     function save_data(){
@@ -119,6 +132,18 @@
         localStorage.setItem('ea2_p13res10', ea2_p13res10);
         var ea2_p13res11 = document.getElementById('ea2_p13res11').value;
         localStorage.setItem('ea2_p13res11', ea2_p13res11);
+		var ea2_p13res12 = document.getElementById('ea2_p13res12').value;
+        localStorage.setItem('ea2_p13res12', ea2_p13res12);
+        var ea2_p13res13 = document.getElementById('ea2_p13res13').value;
+        localStorage.setItem('ea2_p13res13', ea2_p13res13);
+        var ea2_p13res14 = document.getElementById('ea2_p13res14').value;
+        localStorage.setItem('ea2_p13res14', ea2_p13res14);
+        var ea2_p13res15 = document.getElementById('ea2_p13res15').value;
+        localStorage.setItem('ea2_p13res15', ea2_p13res15);
+        var ea2_p13res16 = document.getElementById('ea2_p13res16').value;
+        localStorage.setItem('ea2_p13res16', ea2_p13res16);
+        var ea2_p13res17 = document.getElementById('ea2_p13res17').value;
+        localStorage.setItem('ea2_p13res17', ea2_p13res17);
         
 
         alert("Saved correctly");
